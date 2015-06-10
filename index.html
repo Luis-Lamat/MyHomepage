@@ -2,28 +2,43 @@
 <html>
   <head>
     <title>Luis Lamadrid</title>
-    <link href="css/main.css" rel="stylesheet" />
+    <link href="css/bootstrap-cosmo.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/main.css" rel="stylesheet" type="text/css" />
     <script src="js/shared/angular.min.js"></script>
   </head>
+
   <body ng-app="myApp">
     <div class="header">
       <div class="container">
-        <h1>Home Page</h1>
+        <h1 class="t1-center">Hi, I'm Luis</h1>
+        <p class="st1-center">and I'm a web developer.</p>
       </div>
     </div>
 
-    <div class="main" ng-controller="MainController">
-      <div class="container">
-
-        <h2>{{ job }}</h2>
-        <p>{{ description }}</p>
-
+    <div class="container">
+      <div class="row">
+        <div class="col-md-2">
+          sidenav
+        </div>
+        <div class="col-md-10">
+          <div class="projects" ng-controller="ProjectsController">
+            <div class="project-wrapper" ng-repeat="project in projects">
+              <hr>
+              <h1 class="project-title">{{ project.name }}</h1>
+              <span>{{ project.start | date:"MMM yyyy" }} - {{ project.finish | date:"MMM yyyy" }}</span>        
+            </div>
+          </div>
+        </div>
       </div>
     </div>
+
+    <footer>
+      This is an open source project on <a href="https://github.com/">github.</a>
+    </footer>
 
     <!-- Modules -->
     <script src="js/app.js"></script>
 
     <!-- Controllers -->
-    <script src="js/controllers/MainController.js"></script>
+    <script src="js/controllers/ProjectsController.js"></script>
   </body>

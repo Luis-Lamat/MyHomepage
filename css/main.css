@@ -1,0 +1,49 @@
+
+/* HTML Native Elements */
+
+html, body {
+  color: #3c3c3c;
+  background-color: whitesmoke;
+  min-height: 100% !important;
+  height: 100%;
+}
+
+footer {
+  background-color: #333333;
+  padding: 10px;
+  color: #EAEAEA;
+  text-align: center;
+  margin-top: 50px;
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+}
+
+/* Nested classes on Native HTML */
+
+/* Custom ID's */
+
+/* Custom Classes */
+
+.t1-center {
+  font-weight: bold;
+  text-align: center;
+  margin: 40px 0px 0px 0px;
+  font-size: 80px;
+}
+
+.st1-center {
+  text-align: center;
+  font-family: 'Georgia', serif;
+  font-style: italic;
+  font-size: 40px;
+}
+
+.project-title {
+  font-weight: 400;
+
+}
+
+.bold {
+  font-weight: bold;
+}
