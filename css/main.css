@@ -15,7 +15,6 @@ footer {
   text-align: center;
   margin-top: 50px;
   bottom: 0;
-  position: fixed;
   width: 100%;
 }
 
@@ -24,6 +23,13 @@ footer {
 /* Custom ID's */
 
 /* Custom Classes */
+
+/*.project-card {
+  background-color: white;
+  border-bottom: 5px solid rgb(168, 24, 24);
+  padding: 12px 30px 30px 30px;
+  margin-top: 20px;
+}*/
 
 .t1-center {
   font-weight: bold;
